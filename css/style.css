@@ -453,8 +453,8 @@ input:focus {
   background: var(--amarillo, 0.3);
 }
 .btnForm {
-  width: 100%;
-  padding: 2vw 2vw;
+  width: 50%;
+  padding: 1.5rem 2rem;
   font-size: 2rem;
   background-color: var(--blanco);
   background: rgba(255, 255, 255, 0.1);
@@ -532,17 +532,44 @@ input:focus {
 /* ALERTA */
 .alerta{
   font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--blanco);
   background-color: var(--alerta);
   padding: 1rem 2rem;
   border-radius: 1rem;
 }
 .alertaSucces{
-  font-size: 2rem;
+  width: 10%;
+  font-size: 1.5rem;
   color: var(--blanco);
   background-color: var(--succes);
   padding: 1rem 2rem;
   border-radius: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .alerta{
+    font-size: 2rem;
+    color: var(--blanco);
+    background-color: var(--alerta);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+  }
+  .alertaSucces{
+    font-size: 2rem;
+    color: var(--blanco);
+    background-color: var(--succes);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+  }
+}
+@media (max-width: 320px) {
+  .alerta{
+    font-size: 1rem;
+  }
+  .alertaSucces{
+    font-size: 1rem;
+  }
 }
 
 /*ANIMACIONES */
