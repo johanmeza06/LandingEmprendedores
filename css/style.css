@@ -7,8 +7,8 @@
   --azulClaro: #8ecae6;
   --amarillo: #ffb703;
   --blanco: #ffffff;
-  --gris: #f1f1f3; 
-  --alerta:  #ff5959;
+  --gris: #f1f1f3;
+  --alerta: #ff5959;
   --succes: #a1dd70;
   --width: 550px;
 
@@ -63,12 +63,16 @@ body {
   font-family: var(--fuente);
   color: var(--blanco);
 
-  background: rgb(33,158,188);
-  background: linear-gradient(180deg, rgba(33,158,188,1) 0%, rgba(2,48,71,1) 100%);
+  background: rgb(33, 158, 188);
+  background: linear-gradient(
+    180deg,
+    rgba(33, 158, 188, 1) 0%,
+    rgba(2, 48, 71, 1) 100%
+  );
 }
 
 /* NAV */
-.logo{
+.logo {
   width: 50%;
 }
 .header {
@@ -152,11 +156,11 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
-.contenido h3{
-  font-size:  10vw;
+.contenido h3 {
+  font-size: 10vw;
   text-align: center;
 }
-.contenido p{
+.contenido p {
   font-size: 4vw;
   text-align: center;
   font-weight: 300;
@@ -292,39 +296,38 @@ body {
 
 /* QUIENES SOMOS */
 
-.quienesSomos{
+.quienesSomos {
   width: 100%;
 }
-.quienesSomos h3{
+.quienesSomos h3 {
   font-size: 10vw;
   text-align: center;
   margin: 4rem 0;
   font-weight: bold;
 }
-.quienesSomos p{
+.quienesSomos p {
   font-size: 4vw;
   text-align: center;
   margin-bottom: 2rem 0;
   font-weight: 300;
 }
-.quienesSomosContenedor{
+.quienesSomosContenedor {
   text-align: center;
   display: flex;
   flex-direction: column;
 }
-.boxImagen{
- width: 30%;
+.boxImagen {
+  width: 30%;
 }
-.box h3{
+.box h3 {
   font-size: 4vw;
   margin: 2rem 0;
   font-weight: 400;
-
 }
 
 /* RESPONSIVE QUIENES SOMOS */
 @media (min-width: 1024px) {
-  .quienesSomos{
+  .quienesSomos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -332,27 +335,27 @@ body {
     width: 100%;
     height: 100vh;
   }
-  .quienesSomosContenedor{
+  .quienesSomosContenedor {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 10rem;
   }
-  .quienesSomos h3{
+  .quienesSomos h3 {
     font-size: 6vw;
     text-align: center;
   }
-  .quienesSomos p{
+  .quienesSomos p {
     font-size: 1.5vw;
     text-align: center;
     padding: 2rem 20rem;
   }
-  .boxImagen{
+  .boxImagen {
     width: 100%;
     height: auto;
-   }
-   .box h3{
+  }
+  .box h3 {
     font-size: 2vw;
     text-align: center;
     margin: 4rem 0;
@@ -361,11 +364,16 @@ body {
 }
 
 /* CONTACTANOS */
-.contactanos{
+.contactanos {
   width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10rem;
 }
-.formContactanos{
+.formContactanos {
   padding: 4rem 1.5rem;
   margin: 0 2rem;
   background-color: var(--blanco);
@@ -376,14 +384,13 @@ body {
   -webkit-backdrop-filter: blur(8.1px);
 }
 
-.contactanos h3{
-  font-size: 6vw;
+.contactanos h3 {
+  font-size: 10vw;
   text-align: center;
-  margin: 4rem 0;
   font-weight: bold;
 }
 
-.formContactanos form{
+.formContactanos form {
   position: relative;
   display: grid;
   place-items: center;
@@ -434,7 +441,7 @@ input:focus {
 }
 .bar {
   background: rgba(255, 255, 255, 0.5);
-  content: '';
+  content: "";
   width: 550px;
   height: 2px;
   transition: 0.3s ease;
@@ -442,7 +449,7 @@ input:focus {
 }
 
 .bar:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 150%;
@@ -475,18 +482,18 @@ input:focus {
   -webkit-backdrop-filter: blur(19.8px);
 }
 @media (min-width: 1024px) {
-  .contactanos{
+  .contactanos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .formContactanos{
+  .formContactanos {
     padding: 4rem 1.5rem;
     width: 50%;
     margin: 0 auto;
   }
-  .btnForm{
+  .btnForm {
     width: 50%;
     padding: 2rem 2rem;
   }
@@ -530,7 +537,7 @@ input:focus {
 }
 
 /* ALERTA */
-.alerta{
+.alerta {
   font-size: 2rem;
   font-size: 1.5rem;
   color: var(--blanco);
@@ -538,7 +545,7 @@ input:focus {
   padding: 1rem 2rem;
   border-radius: 1rem;
 }
-.alertaSucces{
+.alertaSucces {
   width: 10%;
   font-size: 1.5rem;
   color: var(--blanco);
@@ -548,14 +555,14 @@ input:focus {
 }
 
 @media (min-width: 1024px) {
-  .alerta{
+  .alerta {
     font-size: 2rem;
     color: var(--blanco);
     background-color: var(--alerta);
     padding: 1rem 2rem;
     border-radius: 1rem;
   }
-  .alertaSucces{
+  .alertaSucces {
     font-size: 2rem;
     color: var(--blanco);
     background-color: var(--succes);
@@ -564,10 +571,10 @@ input:focus {
   }
 }
 @media (max-width: 320px) {
-  .alerta{
+  .alerta {
     font-size: 1rem;
   }
-  .alertaSucces{
+  .alertaSucces {
     font-size: 1rem;
   }
 }
