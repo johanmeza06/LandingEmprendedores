@@ -488,6 +488,9 @@ input:focus {
     justify-content: center;
     align-items: center;
   }
+  .contactanos h3{
+    font-size: 6vw;
+  }
   .formContactanos {
     padding: 4rem 1.5rem;
     width: 50%;
